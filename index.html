@@ -6,10 +6,12 @@
                  border: 2px solid green;
             }
             #upperhalf{
-                border: 2px dotted blue;
+                border: 2px dotted pink;
+                height:auto;
             }
             #lowerhalf{
                 border: 2px solid red;
+                height:auto;
             }
             footer {
                 display: table;
@@ -17,18 +19,31 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+            img{
+                height:50px;
+                width:52px;
+            }
         </style>
     </head>
     <body>
     <h1>Gary Lai</h1>
-    <div id="nav">
-        <a href="https://www.google.com/">Google</a>
+    <nav id="nav">
+        <a href="#upperhalf">About Me</a>
+        <a href="#lowerhalf">Projects</a>
+        <a href="#contact">Contact Info</a>
+    </nav>
+    <div id="upperhalf">
+        <h2>About Me:</h2>
     </div>
-    <div id="upperhalf"></div>
-    <div id="lowerhalf"></div>
-    <footer>
+    <div id="lowerhalf">
+        <h2>Projects:</h2>
+    </div>
+    <footer id="contact">
         <p>Gary Lai</p>
         <p>garylai910@gmail.com</p>
+        <a href="https://github.com/gwebwe">
+        <img src="github.png">
+        </a>
     </footer>
     </body>
 </htmnl>
