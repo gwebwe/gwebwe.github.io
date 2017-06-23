@@ -19,10 +19,24 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            img{
-                height:50px;
-                width:52px;
+            img.icon{
+                height:30px;
+                width:32px;
             }
+            img {
+                height:400px;
+                width:400px;
+            }
+            table,th,tr,td{
+                border:2px solid black;
+            }
+            tr,td {
+                width:19%;
+            }
+            .complete{
+                color: darkgreen;
+            }
+
         </style>
     </head>
     <body>
@@ -37,12 +51,38 @@
     </div>
     <div id="lowerhalf">
         <h2>Projects:</h2>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Picture</th>
+                <th>Summary</th>
+                <th>Status</th>
+                <th>Duration</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>IoT To Improve Modern Day Life</td>
+                <td><img src="Prototype.png"></td>
+                <td>Home system that allow a user to monitor, control, and receive notifications from their home through a website.
+                Had two main modules, the website and the local controller. A LAMP stack was used for the website, while
+                    a Raspberry Pi Model B was used for the local controller. I was responsible for the website, which can
+                    be seen in my GitHub.
+                </td>
+                <td class="complete">Completed</td>
+                <td>August 2015-May 2016</td>
+                <td><a href="https://github.com/gwebwe/SJSU-Year-Long-Senior-Project-2016">GitHub Link</a></td>
+            </tr>
+        </table>
     </div>
     <footer id="contact">
+        <h3>Contact</h3>
         <p>Gary Lai</p>
-        <p>garylai910@gmail.com</p>
+        <p><a href="mailto:garylai910@gmail.com">garylai910@gmail.com</a></p>
         <a href="https://github.com/gwebwe">
-        <img src="github.png">
+        <img class="icon" src="github.png" title="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/gary-lai-161446aa/">
+            <img class="icon" src="linkedin.png" title="LinkedIn">
         </a>
     </footer>
     </body>
