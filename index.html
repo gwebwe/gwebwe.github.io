@@ -2,6 +2,7 @@
     <head>
         <title>Gary Lai Personal Website</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
         <!-- Optional theme -->
@@ -14,16 +15,20 @@
     <h1>Gary Lai</h1>
 
     <!--Navigation-->
-    <nav id="nav">
-        <a href="#upperhalf">About Me</a>
-        <a href="#lowerhalf">Projects</a>
-        <a href="Resume.pdf" download>Resume</a>
-        <a href="#contact">Contact Info</a>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <ul class="nav navbar-nav">
+            <li><a href="#upperhalf">About Me</a></li>
+            <li><a href="#lowerhalf">Projects</a></li>
+            <li><a href="Resume.pdf" download>Resume</a></li>
+            <li><a href="#contact">Contact Info</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!--About me -->
     <div id="upperhalf">
-        <img id="me" class="img-circle" src="Me.jpg" >
+        <img id="me" class="img-rounded" src="Me.jpg" >
         <div id="summary">
             <h2>About Me:</h2>
             <p> I am a graduated from San Jose State University with a Bachelors of Science in Computer Engineering.
