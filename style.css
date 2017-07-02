@@ -3,7 +3,25 @@
                  border: 2px solid green;
             }
             #upperhalf{
-                height:auto;
+                position: relative;
+
+            }
+            #upperhalf::after{
+                content:"";
+                display:block;
+                top:0;
+                left:0;
+                position: absolute;
+                background-image: url("sjsuimg.jpg");
+                background-size:cover;
+                background-top:100px;
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: .3;
+                width:100%;
+                height:100%;
+                z-index:-1;
+
             }
             #lowerhalf{
                 border: 2px solid red;
@@ -20,7 +38,9 @@
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
+                clear:both;
             }
+
             img.icon{
                 height:30px;
                 width:32px;
@@ -30,16 +50,14 @@
                 width:300px;
             }
             table,th,tr,td{
+                padding:-25px;
                 border:2px solid black;
             }
             tr,td {
-                width:15%;
+                width:25%;
             }
-            .complete{
-                color: darkgreen;
-            }
-            .incomplete{
-                color:red;
+            th{
+                background-color: cornflowerblue;
             }
             #me{
                 display: block;
