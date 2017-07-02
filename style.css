@@ -9,7 +9,12 @@
                 border: 2px solid red;
                 height:auto;
             }
-
+            #skillset{
+                border: 2px solid yellow;
+            }
+            #education{
+                border: 2px solid blue;
+            }
             footer {
                 display: table;
                 text-align: center;
