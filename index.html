@@ -16,10 +16,10 @@
     <nav class="nav navbar-inverse navbar-static-top">
         <div class="container">
             <ul class="nav nav-pills nav-justified">
-            <li><a href="#upperhalf">About Me</a></li>
-            <li><a href="#lowerhalf">Projects</a></li>
-            <li><a href="Resume.pdf" download>Resume</a></li>
-            <li><a href="#contact">Contact Info</a></li>
+                <li><a href="#info">About Me</a></li>
+                <li><a href="#lowerhalf">Projects</a></li>
+                <li><a href="Resume.pdf" download>Resume</a></li>
+                <li><a href="#contact">Contact Info</a></li>
             </ul>
         </div>
     </nav>
@@ -27,25 +27,34 @@
     <!--About me -->
     <div id="upperhalf">
         <img id="me" class="img-rounded" src="Me.jpg" >
-        <div id="summary">
-            <h2>About Me:</h2>
-            <p> I am a graduated from San Jose State University with a Bachelors of Science in Computer Engineering.
-                I am currently seeking an opportunity to further develop my technical skill set while also contributing in a
-                professional environment.
-            </p>
+        <div id="buttons">
+            <a href="Resume.pdf" class="btn" download>Resume</a>
+            <a href="#contact" class="btn">Contact Info</a>
+        </div>
+    </div>
+
+    <div id="info">
+        <div class="row">
+            <div class="col-sm-12" id="summary">
+                <h2>About Me:</h2>
+                <p> I am a graduated from San Jose State University with a Bachelors of Science in Computer Engineering.
+                    I am currently seeking an opportunity to further develop my technical skill set while also contributing in a
+                    professional environment.
+                </p>
+            </div>
         </div>
         <div class="row">
             <div class="col-sm-6" id="skillset">
                 <dl>
                     <dt>Programming</dt>
-                        <dd>C/C++</dd>
-                        <dd>Python</dd>
-                        <dd>Assembly Language</dd>
-                        <dd>HTML/CSS</dd>
-                        <dd>SQL</dd>
+                    <dd>C/C++</dd>
+                    <dd>Python</dd>
+                    <dd>Assembly Language</dd>
+                    <dd>HTML/CSS</dd>
+                    <dd>SQL</dd>
                     <dt>Operating Systems</dt>
-                        <dd>Microsoft Windows</dd>
-                        <dd>Linux</dd>
+                    <dd>Microsoft Windows</dd>
+                    <dd>Linux</dd>
                 </dl>
             </div>
             <div class="col-sm-6" id="education">
@@ -88,7 +97,7 @@
             </tr>
             <tr>
                 <td><b>IoT To Improve Modern Day Life</b>
-                <img src="Prototype.png">
+                    <img src="Prototype.png">
                 </td>
                 <td>Home system that allow a user to monitor, control, and receive notifications from their home through a website.
                     Had two main modules, the website and the local controller. A LAMP stack was used for the website, while
@@ -121,7 +130,7 @@
     <footer id="contact">
         <h3>Contact</h3>
         <p>Gary Lai</p>
-        <p><a href="mailto:garylai910@gmail.com">garylai910@gmail.com</a></p>
+        <p><a href="mailto:garylai910@gmail.com" id="email">garylai910@gmail.com</a></p>
         <a href="https://github.com/gwebwe">
             <img class="icon" src="github.png" title="GitHub">
         </a>
