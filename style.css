@@ -28,8 +28,10 @@
                 color:black;
             }
             #skillsandprojects{
+                display:block;
                 border: 2px solid red;
                 height:auto;
+                text-align: center;
 
             }
             #buttons{
@@ -72,9 +74,15 @@
                 height:30px;
                 width:32px;
             }
-            img {
-                height:300px;
-                width:300px;
+            .projects{
+                display:block;
+                margin:auto;
+            }
+            .projectimg{
+                width:175px;
+                height:175px;
+                display:block;
+                margin: 0 auto;
             }
             table,th,tr,td{
                 padding:-25px;
@@ -92,4 +100,7 @@
             }
             h2{
                 margin-top:10px;
+            }
+            #iotproject{
+                border:2px solid green;
             }
