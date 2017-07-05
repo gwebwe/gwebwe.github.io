@@ -1,34 +1,117 @@
 <htmnl>
     <head>
         <title>Gary Lai Personal Website</title>
-        <style>
-            #nav{
-                 border: 2px solid green;
-            }
-            #upperhalf{
-                border: 2px dotted blue;
-            }
-            #lowerhalf{
-                border: 2px solid red;
-            }
-            footer {
-                display: table;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body>
-    <h1>Gary Lai</h1>
-    <div id="nav">
-        <a href="https://www.google.com/">Google</a>
+
+    <!--Navigation-->
+    <nav class="nav navbar-inverse navbar-static-top">
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#skillsandprojects">Techical Skills and Projects</a></li>
+            <li><a href="Resume.pdf" download>Resume</a></li>
+            <li><a href="#contact">Contact Info</a></li>
+        </ul>
+    </nav>
+
+    <!--About me -->
+    <div id="upperhalf">
+        <img id="me" class="img-rounded img-responsive" src="img/Me.jpg" >
+        <div id="buttons">
+            <a href="Resume.pdf" class="btn" download>Resume</a>
+            <a href="#contact" class="btn">Contact Info</a>
+        </div>
     </div>
-    <div id="upperhalf"></div>
-    <div id="lowerhalf"></div>
-    <footer>
+
+    <!--Infromation,Education,Skills,Projects-->
+    <div class="container-fluid">
+        <div class="row" id="aboutme" >
+            <div class="col-sm-12">
+                <div id="summary">
+                    <h2>About Me:</h2>
+                    <p> I am a graduated from San Jose State University with a Bachelors of Science in Computer Engineering.
+                        I am currently seeking an opportunity to further develop my technical skill set while also contributing in a
+                        professional environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="row">
+            <div class="col-sm-6" id="info">
+                Information
+            </div>
+            <div class="col-sm-6" id="education">
+                <h2>Education</h2>
+                Bachelor of Science in Computer Engineer from San Jose State University
+                <br>May 2016, GPA 3.11/4.00
+                <h4>Courses taken</h4>
+                <div id="courses" class="container">
+                    <div id="coding" class="col-sm-6">
+                        <ul>
+                            <li>CMPE 30: Programming Concept</li>
+                            <li>CMPE 50: Object Oriented Concept</li>
+                            <li>CMPE 130: Advanced Algorithm Design</li>
+                            <li>CMPE 148: Computer Networks I</li>
+                            <li>CMPE 138: Database Systems I</li>
+                        </ul>
+                    </div>
+                    <div id="others" class="col-sm-6">
+                        <ul>
+                            <li>SE 166:Information Security</li>
+                            <li>CMPE 187:Software Quality Engineering</li>
+                            <li>CMPE 124/CMPE 125:Digital Design I/II</li>
+                            <li>EE 98: Introduction to Circuit Analysis</li>
+                            <li>CMPE 142: Operating Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <!--Projects--><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <!--Contact-->
+    <footer id="contact">
+        <h3>Contact</h3>
         <p>Gary Lai</p>
-        <p>garylai910@gmail.com</p>
+        <p><a href="mailto:garylai910@gmail.com" id="email">garylai910@gmail.com</a></p>
+        <a href="https://github.com/gwebwe">
+            <img class="icon" src="icon/github.png" title="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/gary-lai-161446aa/">
+            <img class="icon" src="icon/linkedin.png" title="LinkedIn">
+        </a>
     </footer>
     </body>
 </htmnl>
