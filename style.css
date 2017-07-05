@@ -21,16 +21,16 @@
                 height:100%;
                 z-index:-1;
             }
+            #aboutme{
+                border:2px solid orange;
+            }
             #email{
                 color:black;
             }
-            #lowerhalf{
+            #skillsandprojects{
                 border: 2px solid red;
                 height:auto;
 
-            }
-            #info{
-                border: 3px solid purple;
             }
             #buttons{
                 text-align: center;
@@ -50,9 +50,13 @@
                 border: 2px solid green;
             }
             #summary{
-                border: 2px solid red;
-                margin:0 auto;
                 text-align: center;
+                size:20px;
+                width:25%;
+                margin:0 auto;
+            }
+            #info{
+                border: 2px solid pink ;
             }
             footer {
                 display: table;
@@ -85,4 +89,7 @@
             #me{
                 display: block;
                 margin: 0 auto;
+            }
+            h2{
+                margin-top:10px;
             }

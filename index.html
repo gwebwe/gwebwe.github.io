@@ -12,16 +12,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body>
+
     <!--Navigation-->
     <nav class="nav navbar-inverse navbar-static-top">
-        <div class="container-fluid">
-            <ul class="nav nav-pills nav-justified">
-                <li><a href="#info">About Me</a></li>
-                <li><a href="#lowerhalf">Projects</a></li>
-                <li><a href="Resume.pdf" download>Resume</a></li>
-                <li><a href="#contact">Contact Info</a></li>
-            </ul>
-        </div>
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#skillsandprojects">Techical Skills and Projects</a></li>
+            <li><a href="Resume.pdf" download>Resume</a></li>
+            <li><a href="#contact">Contact Info</a></li>
+        </ul>
     </nav>
 
     <!--About me -->
@@ -33,33 +32,27 @@
         </div>
     </div>
 
-    <div id="info">
-        <div class="row">
-            <div class="col-sm-12" id="summary">
-                <h2>About Me:</h2>
-                <p> I am a graduated from San Jose State University with a Bachelors of Science in Computer Engineering.
-                    I am currently seeking an opportunity to further develop my technical skill set while also contributing in a
-                    professional environment.
-                </p>
+    <!--Infromation,Education,Skills,Projects-->
+    <div class="container-fluid">
+        <div class="row" id="aboutme" >
+            <div class="col-sm-12">
+                <div id="summary">
+                    <h2>About Me:</h2>
+                    <p> I am a graduated from San Jose State University with a Bachelors of Science in Computer Engineering.
+                        I am currently seeking an opportunity to further develop my technical skill set while also contributing in a
+                        professional environment.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6" id="skillset">
-                <dl>
-                    <dt>Programming</dt>
-                    <dd>C/C++</dd>
-                    <dd>Python</dd>
-                    <dd>Assembly Language</dd>
-                    <dd>HTML/CSS</dd>
-                    <dd>SQL</dd>
-                    <dt>Operating Systems</dt>
-                    <dd>Microsoft Windows</dd>
-                    <dd>Linux</dd>
-                </dl>
+            <div class="col-sm-6" id="info">
+                Information
             </div>
             <div class="col-sm-6" id="education">
-                <img src="img/sjsu.png" title="San Jose State University" class="img-responsive">
-                Bachelor of Science in Computer Engineer from San Jose State University, C/O 2016.
+                <h2>Education</h2>
+                Bachelor of Science in Computer Engineer from San Jose State University
+                <br>May 2016, GPA 3.11/4.00
                 <h4>Courses taken</h4>
                 <div id="courses" class="container">
                     <div id="coding" class="col-sm-6">
@@ -83,48 +76,60 @@
                 </div>
             </div>
         </div>
-    </div>
+        <!--Projects-->
+        <div id="skillsandprojects" class="row">
+            <div class="col-sm-6" id="skillset">
+                <h2>Technical Skills</h2>
+                <dl>
+                    <dt>Programming</dt>
+                    <dd>C/C++</dd>
+                    <dd>Python</dd>
+                    <dd>Assembly Language</dd>
+                    <dd>HTML/CSS</dd>
+                    <dd>SQL</dd>
+                    <dt>Operating Systems</dt>
+                    <dd>Microsoft Windows</dd>
+                    <dd>Linux</dd>
+                </dl>
+            </div>
 
-    <!--Projects-->
-    <div id="lowerhalf" class="table-responsive col-sm-6">
-        <h2>Projects:</h2>
-        <table class="table-condensed">
-            <tr>
-                <th>Title</th>
-                <th>Summary</th>
-                <th>Link</th>
-                <th>Programming languages and technologies used</th>
-            </tr>
-            <tr>
-                <td><b>IoT To Improve Modern Day Life</b>
-                    <img src="img/Prototype.png">
-                </td>
-                <td>Home system that allow a user to monitor, control, and receive notifications from their home through a website.
-                    Had two main modules, the website and the local controller. A LAMP stack was used for the website, while
-                    a Raspberry Pi Model B was used for the local controller. I was responsible for the website, which can
-                    be seen in my GitHub.
-                </td>
-                <td><a href="https://github.com/gwebwe/SJSU-Year-Long-Senior-Project-2016">GitHub Link</a></td>
-                <td><p>HTML/CSS, PHP, LAMP Stack, AWS EC2, MySQL</p></td>
-            </tr>
-            <!--
-            <tr>
-                <td>Udacity Python Web Development Course</td>
-                <td>No Img</td>
-                <td>Udacity web development course with the use of Google cloud and Python.</td>
-                <td class="incomplete">Currently Working on</td>
-                <td>N/A</td>
-                <td><a href="https://github.com/gwebwe/Udacity-Python">GitHub Link</a>
-                    <a href="http://gwebweproject.appspot.com/">Website Link</a>
-                </td>
-                <td>Google App Engine,Python, HTML/CSS</td>
-            </tr>
-            -->
-        </table>
-    </div>
-    <div class="col-sm-6">
-
-        test
+            <div class="col-sm-6 table-responsive" id="projects">
+                <h2>Projects:</h2>
+                <table class="table-condensed">
+                    <tr>
+                        <th>Title</th>
+                        <th>Summary</th>
+                        <th>Link</th>
+                        <th>Programming languages and technologies used</th>
+                    </tr>
+                    <tr>
+                        <td><b>IoT To Improve Modern Day Life</b>
+                            <img src="img/Prototype.png">
+                        </td>
+                        <td>Home system that allow a user to monitor, control, and receive notifications from their home through a website.
+                            Had two main modules, the website and the local controller. A LAMP stack was used for the website, while
+                            a Raspberry Pi Model B was used for the local controller. I was responsible for the website, which can
+                            be seen in my GitHub.
+                        </td>
+                        <td><a href="https://github.com/gwebwe/SJSU-Year-Long-Senior-Project-2016">GitHub Link</a></td>
+                        <td><p>HTML/CSS, PHP, LAMP Stack, AWS EC2, MySQL</p></td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td>Udacity Python Web Development Course</td>
+                        <td>No Img</td>
+                        <td>Udacity web development course with the use of Google cloud and Python.</td>
+                        <td class="incomplete">Currently Working on</td>
+                        <td>N/A</td>
+                        <td><a href="https://github.com/gwebwe/Udacity-Python">GitHub Link</a>
+                            <a href="http://gwebweproject.appspot.com/">Website Link</a>
+                        </td>
+                        <td>Google App Engine,Python, HTML/CSS</td>
+                    </tr>
+                    -->
+                </table>
+            </div>
+        </div>
     </div>
     <!--Contact-->
     <footer id="contact">
