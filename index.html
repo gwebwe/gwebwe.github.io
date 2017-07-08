@@ -18,7 +18,7 @@
         <ul class="nav nav-pills nav-justified">
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#skillsandprojects">Techical Skills and Projects</a></li>
-            <li><a href="Resume.pdf" download>Resume</a></li>
+            <li><a href="Resume.pdf" target="_blank">Resume</a></li>
             <li><a href="#contact">Contact Info</a></li>
         </ul>
     </nav>
@@ -27,7 +27,7 @@
     <div id="upperhalf">
         <img id="me" class="img-rounded img-responsive" src="img/Me.jpg" >
         <div id="buttons">
-            <a href="Resume.pdf" class="btn" download>Resume</a>
+            <a href="Resume.pdf" class="btn" target="_blank">Resume</a>
             <a href="#contact" class="btn">Contact Info</a>
         </div>
     </div>
@@ -36,11 +36,20 @@
     <div class="container-fluid">
         <div class="row" id="aboutme" >
             <div class="col-sm-12">
-                <div id="summary">
+                <div id="summary" class="section">
                     <h2>About Me:</h2>
-                    <p> I am a graduated from San Jose State University with a Bachelors of Science in Computer Engineering.
-                        I am currently seeking an opportunity to further develop my technical skill set while also contributing in a
-                        professional environment.
+                    <p>
+                        I graduated from San Jose State University (SJSU) with a Bachelor of Science (B.S)
+                        in Computer Engineering in May of 2016.
+                        At SJSU, I learned about databases, circuit design/analysis, and programming.
+                        During my last year at SJSU, I worked with three other members to create
+                        <a href="#iotproject">IoT to Improve Modern Day Life.</a>
+                        I really enjoyed learning new skills, working in a team, and seeing the steps needed in order
+                        to create a successful project.
+                    </p>
+                    <p>
+                        I am looking for a position where I can further develop my technical skill set while contributing
+                        in a professional environment. I am always willing to learn new skills for the position.
                     </p>
                 </div>
             </div>
@@ -79,36 +88,38 @@
         </div>
         -->
         <!--Projects-->
-        <div class="row">
-            <div class="col-sm"
-        </div>
         <div class="row" id="skillsandprojects">
             <h2>Projects</h2>
-            <div class="col-sm-4 projects" id="iotproject">
-                <h3>IoT To Improve Modern Day Life</h3>
-                <input type="image" class="img-responsive projectimg" src="img/Prototype.png" data-toggle="modal" data-target="#iotprojectinfo"/>
-            </div>
-            <div class="modal fade" id="iotprojectinfo">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title">Iot To Improve Modern Day life</h3>
-                        </div>
-                        <div class="modal-body">
-                            <p>Status:<span class="text-success">Completed</span></p>
-                            <p>Some Info about Iot To Improve Modern Day Life</p>
-                            <a href="https://github.com/gwebwe/SJSU-Year-Long-Senior-Project-2016">
-                                <button type="button">GitHub</button>
-                            </a>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <div class="col-sm-6" id="projects">
+                <div class="col-sm-4 projects" id="iotproject">
+                    <h3>IoT To Improve Modern Day Life</h3>
+                    <input type="image" class="img-responsive projectimg" src="img/Prototype.png" data-toggle="modal" data-target="#iotprojectinfo"/>
+                </div>
+                <div class="modal fade" id="iotprojectinfo">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Iot To Improve Modern Day life</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Status:<span class="text-success">Completed</span></p>
+                                <p>We were responsible for designing, implementing, testing, documentations,and presenting
+                                    the project at our senior expo.
+                                </p>
+                                <a href="https://github.com/gwebwe/SJSU-Year-Long-Senior-Project-2016">
+                                    <button type="button">GitHub</button>
+                                </a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 projects" id="udacity">
-                hello
+            <div class="col-sm-6" id="skills">
+
+                skills
             </div>
         </div>
 
