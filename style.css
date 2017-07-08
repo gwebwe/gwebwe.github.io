@@ -6,6 +6,7 @@
                 position: relative;
 
             }
+
             #upperhalf::after{
                 content:"";
                 display:block;
@@ -41,7 +42,7 @@
                 padding-bottom: 2%;
             }
             .btn{
-                background-color: cornflowerblue;
+                background-color: lightgray;
                 color:black;
                 margin:10px;
             }
@@ -67,7 +68,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 clear:both;
-                background-color: cornflowerblue;
+                background-color: lightgray;
                 border-radius: 25px;
             }
 
@@ -93,7 +94,7 @@
                 width:25%;
             }
             th{
-                background-color: cornflowerblue;
+                background-color: lightgray;
             }
             #me{
                 display: block;
@@ -108,3 +109,4 @@
             div.section{
                 background-color: lightgray;
             }
+
