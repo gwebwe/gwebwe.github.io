@@ -1,112 +1,115 @@
 
-            #nav{
-                 border: 2px solid green;
-            }
-            #upperhalf{
-                position: relative;
+#nav{
+    border: 2px solid green;
+}
+#upperhalf{
+    position: relative;
 
-            }
+}
 
-            #upperhalf::after{
-                content:"";
-                display:block;
-                top:0;
-                left:0;
-                position: absolute;
-                background-image: url("img/sjsuimg.png");
-                background-size:cover;
-                background-repeat: no-repeat;
-                background-position:100% 100%;
-                opacity: .6;
-                width:100%;
-                height:100%;
-                z-index:-1;
-            }
-            #aboutme{
-                border:2px solid orange;
-            }
-            #email{
-                color:black;
-            }
-            #skillsandprojects{
-                display:block;
-                border: 2px solid red;
-                height:auto;
-                text-align: center;
+#upperhalf::after{
+    content:"";
+    display:block;
+    top:0;
+    left:0;
+    position: absolute;
+    background-image: url("img/sjsuimg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:100% 100%;
+    opacity: .6;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+#aboutme{
+    border:2px solid orange;
+}
+#email{
+    color:black;
+}
+#skillsandprojects{
+    display:block;
+    border: 2px solid red;
+    height:auto;
+    text-align: center;
 
-            }
-            #buttons{
-                text-align: center;
-                margin: 0 auto;
-                padding-top: 1%;
-                padding-bottom: 2%;
-            }
-            .btn{
-                background-color: lightgray;
-                color:black;
-                margin:10px;
-            }
-            #skillset{
-                border: 2px solid yellow;
-            }
-            #education{
-                border: 2px solid green;
-            }
-            #summary{
-                border:2px solid black;
-                text-align: center;
-                size:20px;
-                width:50%;
-                margin:0 auto;
-            }
-            #info{
-                border: 2px solid pink ;
-            }
-            footer {
-                display: table;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                clear:both;
-                background-color: lightgray;
-                border-radius: 25px;
-            }
+}
+#buttons{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.btn{
+    background-color: lightgray;
+    color:black;
+    margin:10px;
+}
+#skillset{
+    border: 2px solid yellow;
+}
+#education{
+    border: 2px solid green;
+}
+#summary{
+    border:2px solid black;
+    text-align: center;
+    size:20px;
+    width:50%;
+    margin:0 auto;
+}
+#info{
+    border: 2px solid pink ;
+}
+footer {
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    clear:both;
+    background-color: lightgray;
+    border-radius: 25px;
+}
 
-            img.icon{
-                height:30px;
-                width:32px;
-            }
-            .projects{
-                display:block;
-                margin:auto;
-            }
-            .projectimg{
-                width:175px;
-                height:175px;
-                display:block;
-                margin: 0 auto;
-            }
-            table,th,tr,td{
-                padding:-25px;
-                border:2px solid black;
-            }
-            tr,td {
-                width:25%;
-            }
-            th{
-                background-color: lightgray;
-            }
-            #me{
-                display: block;
-                margin: 0 auto;
-            }
-            h2{
-                margin-top:10px;
-            }
-            #iotproject{
-                border:2px solid green;
-            }
-            div.section{
-                background-color: lightgray;
-            }
+img.icon{
+    height:30px;
+    width:32px;
+}
+.projects{
+    display:block;
+    margin:auto;
+}
+.projectimg{
+    width:175px;
+    height:175px;
+    display:block;
+    margin: 0 auto;
+}
+table {
+    border-collapse:collapse;
+    border-spacing: 2em;
+}
+
+
+#me{
+    display: block;
+    margin: 0 auto;
+}
+h2{
+    margin-top:10px;
+}
+#iotproject{
+    border:2px solid green;
+}
+div.section{
+    background-color: lightgray;
+}
+#skills{
+    border:2px solid blue;
+    width:50%;
+    margin:0 auto;
+    text-align: center;
+    font-size:1.2em;
+}
 
