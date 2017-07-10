@@ -93,7 +93,7 @@ img.icon{
     clear:both;
     background-color: red;
 }
-#project1{
+#fantasy{
     border:2px solid green;
 }
 .projectimg{
@@ -122,5 +122,9 @@ div.section{
     margin:0 auto;
     text-align: center;
     font-size:1.2em;
+    background-color: lightgray;
+}
+meter{
+    background:black;
 }
 
