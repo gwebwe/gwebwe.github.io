@@ -32,8 +32,6 @@
     display:block;
     border: 2px solid red;
     height:auto;
-    text-align: center;
-
 }
 #buttons{
     text-align: center;
@@ -76,9 +74,27 @@ img.icon{
     height:30px;
     width:32px;
 }
-.projects{
+#projects{
+    border:2px solid yellow;
     display:block;
     margin:auto;
+}
+#incomplete{
+    display:block;
+    margin:auto;
+    border:2px solid black;
+    clear:both;
+    background-color: yellow;
+}
+#complete{
+    display:block;
+    margin:auto;
+    border:2px solid purple;
+    clear:both;
+    background-color: red;
+}
+#project1{
+    border:2px solid green;
 }
 .projectimg{
     width:175px;
@@ -86,11 +102,6 @@ img.icon{
     display:block;
     margin: 0 auto;
 }
-table {
-    border-collapse:collapse;
-    border-spacing: 2em;
-}
-
 
 #me{
     display: block;
