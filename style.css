@@ -2,15 +2,14 @@
 #nav{
     border: 2px solid green;
 }
-#upperhalf{
+#imgresumecontact{
     position: relative;
-
 }
 div.roundcorner{
     border-radius: 25px;
     background-color: lightgray;
 }
-#upperhalf::after{
+#imgresumecontact::after{
     content:"";
     display:block;
     top:0;
@@ -45,11 +44,11 @@ div.roundcorner{
     margin:10px;
 }
 #skillset{
-
+    height:40%;
+    margin-top:15px;
+    margin-bottom:-15%;
 }
-#education{
 
-}
 #summary{
 
     text-align: center;
@@ -58,7 +57,7 @@ div.roundcorner{
     margin:0 auto;
 }
 #info{
-
+    background-color: grey;
 }
 footer {
     display: table;
@@ -78,6 +77,7 @@ img.icon{
 #projects{
     display:block;
     margin:auto;
+    margin-top:15px;
 }
 #incomplete{
     display:block;
@@ -109,12 +109,11 @@ h2{
     text-decoration: underline;
 }
 #iotproject{
-
+    display:block;
+    text-align: center;
 }
 
 #skills{
-    width:50%;
-    height:50%;
     margin:0 auto;
     text-align: center;
     font-size:1.2em;
