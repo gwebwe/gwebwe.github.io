@@ -6,7 +6,7 @@
     position: relative;
 }
 div.roundcorner{
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: lightgray;
 }
 #imgresumecontact::after{
@@ -45,8 +45,6 @@ div.roundcorner{
 }
 #skillset{
     height:40%;
-    margin-top:15px;
-    margin-bottom:-15%;
 }
 
 #summary{
@@ -55,18 +53,20 @@ div.roundcorner{
     size:20px;
     width:50%;
     margin:0 auto;
+    padding:.5%;
 }
 #info{
     background-color: grey;
+    padding-bottom:3%;
 }
 footer {
     display: table;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     clear:both;
     background-color: lightgray;
-    border-radius: 25px;
+    border-radius: 10px;
+    height:40%;
+    margin: 0 auto;
 }
 
 
@@ -76,8 +76,8 @@ img.icon{
 }
 #projects{
     display:block;
-    margin:auto;
-    margin-top:15px;
+    margin-top:18px;
+    padding-bottom:1%;
 }
 #incomplete{
     display:block;
@@ -107,6 +107,7 @@ img.icon{
 h2{
     margin-top:10px;
     text-decoration: underline;
+    text-align:center;
 }
 #iotproject{
     display:block;
@@ -114,9 +115,9 @@ h2{
 }
 
 #skills{
-    margin:0 auto;
     text-align: center;
-    font-size:1.2em;
+    font-size:1em;
+    padding-top:auto;
 }
 table{
     text-align: center;
@@ -125,7 +126,7 @@ table{
     border-collapse: collapse;
 }
 td,tr{
-    width:20%;
+    width:30%;
     padding: 20px;
 }
 
