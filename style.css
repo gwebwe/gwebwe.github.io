@@ -7,7 +7,7 @@
 }
 div.roundcorner{
     border-radius: 10px;
-    background-color: lightgray;
+    background-color: #90AFC5;
 }
 #imgresumecontact::after{
     content:"";
@@ -39,7 +39,7 @@ div.roundcorner{
     padding-bottom: 2%;
 }
 .btn{
-    background-color: lightgray;
+    background-color:#90AFC5;
     color:black;
     margin:10px;
 }
@@ -56,14 +56,15 @@ div.roundcorner{
     padding:.5%;
 }
 #info{
-    background-color: grey;
-    padding-bottom:3%;
+    background-color:#68829E ;
+    padding-bottom:1%;
+    color:#2A3132;
 }
 footer {
     display: table;
     text-align: center;
     clear:both;
-    background-color: lightgray;
+    background-color: #90AFC5;
     border-radius: 10px;
     height:40%;
     margin: 0 auto;
