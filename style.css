@@ -130,4 +130,13 @@ td,tr{
     width:30%;
     padding: 20px;
 }
+meter::-webkit-meter-bar{
+    background:none;
+    background-color:whitesmoke;
+}
+meter::-webkit-meter-optimum-value{
+    background:none;
+    background-color:#68829E;
+}
+
 
