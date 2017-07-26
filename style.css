@@ -24,7 +24,14 @@ div.roundcorner{
     height:100%;
     z-index:-1;
 }
-
+.modaledgecss{
+    background-color: #68829E ;
+}
+.modalbodycss{
+    margin-top:-1px;
+    margin-bottom:-1px;
+    background-color: #90AFC5;
+}
 #email{
     color:black;
 }
@@ -61,6 +68,7 @@ div.roundcorner{
     padding-bottom:1%;
     color:#2A3132;
 }
+
 footer {
     display: table;
     text-align: center;
@@ -139,5 +147,7 @@ meter::-webkit-meter-optimum-value{
     background:none;
     background-color:#68829E;
 }
+
+{overflow: hidden;}
 
 
