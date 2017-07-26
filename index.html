@@ -1,189 +1,199 @@
 <html>
-    <head>
-        <title>Gary Lai Personal Website</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- Bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+    <title>Gary Lai Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </head>
-    <body id="info">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body id="info">
 
-    <!--Navigation
-    <nav class="nav navbar-inverse navbar-static-top">
-        <ul class="nav nav-pills nav-justified">
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#skillsandprojects">Techical Skills and Projects</a></li>
-        </ul>
-    </nav>
-    -->
-    <div id="imgresumecontact">
-        <!--About me -->
-        <img id="me" class="img-rounded img-responsive" src="img/Me.jpg" >
-        <div id="buttons">
-            <a href="Resume.pdf" class="btn" target="_blank">Resume</a>
-            <a href="#contact" class="btn">Contact Info</a>
+<!--Navigation
+<nav class="nav navbar-inverse navbar-static-top">
+    <ul class="nav nav-pills nav-justified">
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#skillsandprojects">Techical Skills and Projects</a></li>
+    </ul>
+</nav>
+-->
+<div id="imgresumecontact">
+    <!--About me -->
+    <img id="me" class="img-rounded img-responsive" src="img/Me.jpg" >
+    <div id="buttons">
+        <a href="Resume.pdf" class="btn" target="_blank">Resume</a>
+        <a href="#contact" class="btn">Contact Info</a>
+    </div>
+</div>
+
+<!--Infromation,Education,Skills,Projects-->
+<div class="container-fluid">
+    <div class="row" id="aboutme">
+        <div class="col-sm-12">
+            <div id="summary" class="roundcorner">
+                <h2>About Me:</h2>
+                <p>
+                    I graduated from San Jose State University (SJSU) with a Bachelor of Science (B.S)
+                    in Computer Engineering in May of 2016.
+                    At SJSU, I learned about databases, circuit design/analysis, and programming.
+                    During my last year at SJSU, I worked with three other members to create
+                    <a data-toggle="modal" data-target="#iotprojectinfo">IoT to Improve Modern Day Life.</a>
+                    I really enjoyed learning new skills, working in a team, and seeing the steps needed in order
+                    to create a successful project.
+                </p>
+                <p>
+                    I am looking for a position where I can further develop my technical skill set while contributing
+                    in a professional environment. I am always willing to learn new skills for the position.
+                </p>
+            </div>
         </div>
     </div>
-
-    <!--Infromation,Education,Skills,Projects-->
-    <div class="container-fluid">
-        <div class="row" id="aboutme">
-            <div class="col-sm-12">
-                <div id="summary" class="roundcorner">
-                    <h2>About Me:</h2>
-                    <p>
-                        I graduated from San Jose State University (SJSU) with a Bachelor of Science (B.S)
-                        in Computer Engineering in May of 2016.
-                        At SJSU, I learned about databases, circuit design/analysis, and programming.
-                        During my last year at SJSU, I worked with three other members to create
-                        <a data-toggle="modal" data-target="#iotprojectinfo">IoT to Improve Modern Day Life.</a>
-                        I really enjoyed learning new skills, working in a team, and seeing the steps needed in order
-                        to create a successful project.
-                    </p>
-                    <p>
-                        I am looking for a position where I can further develop my technical skill set while contributing
-                        in a professional environment. I am always willing to learn new skills for the position.
-                    </p>
+    <!--
+    <div class="row">
+        <div class="col-sm-6" id="info">
+            Information
+        </div>
+        <div class="col-sm-6" id="education">
+            <h2>Education</h2>
+            Bachelor of Science in Computer Engineer from San Jose State University
+            <br>May 2016, GPA 3.11/4.00
+            <h4>Courses taken</h4>
+            <div id="courses" class="container">
+                <div id="coding" class="col-sm-6">
+                    <ul>
+                        <li>CMPE 30: Programming Concept</li>
+                        <li>CMPE 50: Object Oriented Concept</li>
+                        <li>CMPE 130: Advanced Algorithm Design</li>
+                        <li>CMPE 148: Computer Networks I</li>
+                        <li>CMPE 138: Database Systems I</li>
+                    </ul>
+                </div>
+                <div id="others" class="col-sm-6">
+                    <ul>
+                        <li>SE 166:Information Security</li>
+                        <li>CMPE 187:Software Quality Engineering</li>
+                        <li>CMPE 124/CMPE 125:Digital Design I/II</li>
+                        <li>EE 98: Introduction to Circuit Analysis</li>
+                        <li>CMPE 142: Operating Systems</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!--
-        <div class="row">
-            <div class="col-sm-6" id="info">
-                Information
-            </div>
-            <div class="col-sm-6" id="education">
-                <h2>Education</h2>
-                Bachelor of Science in Computer Engineer from San Jose State University
-                <br>May 2016, GPA 3.11/4.00
-                <h4>Courses taken</h4>
-                <div id="courses" class="container">
-                    <div id="coding" class="col-sm-6">
-                        <ul>
-                            <li>CMPE 30: Programming Concept</li>
-                            <li>CMPE 50: Object Oriented Concept</li>
-                            <li>CMPE 130: Advanced Algorithm Design</li>
-                            <li>CMPE 148: Computer Networks I</li>
-                            <li>CMPE 138: Database Systems I</li>
-                        </ul>
-                    </div>
-                    <div id="others" class="col-sm-6">
-                        <ul>
-                            <li>SE 166:Information Security</li>
-                            <li>CMPE 187:Software Quality Engineering</li>
-                            <li>CMPE 124/CMPE 125:Digital Design I/II</li>
-                            <li>EE 98: Introduction to Circuit Analysis</li>
-                            <li>CMPE 142: Operating Systems</li>
-                        </ul>
-                    </div>
+    </div>
+    -->
+    <!--Projects-->
+    <div class="row" id="skillsandprojects">
+        <div class="col-sm-9 roundcorner" id="projects">
+            <div class="row" id="complete">
+                <h2>Completed Projects</h2>
+                <div class="col-sm-4 projects" id="iotproject">
+                    <h3>IoT To Improve Modern Day Life</h3>
+                    <input type="image" class="img-responsive projectimg" src="img/Prototype.png" data-toggle="modal" data-target="#iotprojectinfo"/>
                 </div>
-            </div>
-        </div>
-        -->
-        <!--Projects-->
-        <div class="row" id="skillsandprojects">
-            <div class="col-sm-9 roundcorner" id="projects">
-                <div class="row" id="complete">
-                    <h2>Completed Projects</h2>
-                    <div class="col-sm-4 projects" id="iotproject">
-                        <h3>IoT To Improve Modern Day Life</h3>
-                        <input type="image" class="img-responsive projectimg" src="img/Prototype.png" data-toggle="modal" data-target="#iotprojectinfo"/>
-                    </div>
-                    <div class="modal fade" id="iotprojectinfo">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title">Iot To Improve Modern Day life</h3>
-                                </div>
-                                <div class="modal-body">
-                                    <p>We were responsible for designing, implementing, testing, documentations,and presenting
-                                        the project at our senior expo.
-                                    </p>
-                                    <a href="https://github.com/gwebwe/SJSU-Year-Long-Senior-Project-2016">
-                                        <button type="button">GitHub</button>
-                                    </a>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
+                <div class="modal fade" id="iotprojectinfo">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Iot To Improve Modern Day life</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p> I worked in a team of four that created a home system that allowed a user to
+                                    monitor and control their home appliances through a website. There were two main
+                                    modules to the project, a local controller and a website. The local controller
+                                    would get communicate with the website to get instructions and would send signals
+                                    to the home appliances to turn them on or off.
+                                </p>
+                                <p>
+                                    I was responsible for designing the website that would communicate with the local
+                                    controller. I used a LAMP stack to create the website and deployed the website
+                                    using Amazon Web Services EC2. We also were responsible for documentation of the
+                                    project, which included project overview, requirements, design, testing, results,
+                                    and conclusion.
+                                </p>
+                                <a href="https://github.com/gwebwe/SJSU-Year-Long-Senior-Project-2016">
+                                    <button type="button" class="btn" >GitHub</button>
+                                </a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row" id="incomplete">
-                    <h2> In progress Projects/Ideas</h2>
-                    <div class="col-sm-4" id="fantasy">
-                        <h3>Fantasy Basketball</h3>
-                        <p>
-                            Fantasy for basketball that show stats for players and there stats vs certain teams
-                            Maybe show total stats when drafting
-                            Maybe show prime years/projection to be better
-                        </p>
-                    </div>
-                </div>
             </div>
-            <div class="col-sm-3" id="skillset">
-                <div id="skills" class="roundcorner">
-                    <h2>Technical Skills</h2>
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td>Python</td>
-                            <td><meter value=".65"></meter></td>
-                            <td>6.5/10</td>
-                        </tr>
-                        <tr>
-                            <td>C/C++</td>
-                            <td><meter value=".6"></meter></td>
-                            <td>6/10</td>
-                        </tr>
-                        <tr>
-                            <td>PHP</td>
-                            <td><meter value=".5"></meter></td>
-                            <td>5/10</td>
-                        </tr>
-                        <tr>
-                            <td>HTML/CSS</td>
-                            <td><meter value=".5"></meter></td>
-                            <td>5/10</td>
-                        </tr>
-                        <tr>
-                            <td>Windows</td>
-                            <td><meter value=".5"></meter></td>
-                            <td>5/10</td>
-                        </tr>
-                        <tr>
-                            <td>Linux</td>
-                            <td><meter value=".3"></meter></td>
-                            <td>3/10</td>
-                        </tr>
-                        <tr>
-                            <td>Django</td>
-                            <td><meter value=".3"></meter></td>
-                            <td>3/10</td>
-                        </tr>
-                        </tbody>
-                    </table>
+            <div class="row" id="incomplete">
+                <h2> In progress Projects/Ideas</h2>
+                <div class="col-sm-4" id="fantasy">
+                    <h3>Fantasy Basketball</h3>
+                    <p>
+                        Fantasy for basketball that show stats for players and there stats vs certain teams
+                        Maybe show total stats when drafting
+                        Maybe show prime years/projection to be better
+                    </p>
                 </div>
-                <footer id="contact">
-                    <h3>Contact</h3>
-                    <p>Gary Lai</p>
-                    <p><a href="mailto:garylai910@gmail.com" id="email" target="_blank">garylai910@gmail.com</a></p>
-                    <a href="https://github.com/gwebwe" target="_blank">
-                        <img class="icon" src="icon/github.png" title="GitHub">
-                    </a>
-                    <a href="https://www.linkedin.com/in/gary-lai-161446aa/" target="_blank">
-                        <img class="icon" src="icon/linkedin.png"  title="LinkedIn">
-                    </a>
-                </footer>
             </div>
         </div>
-        <!--Contact-->
+        <div class="col-sm-3" id="skillset">
+            <div id="skills" class="roundcorner">
+                <h2>Technical Skills</h2>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td><meter value=".65"></meter></td>
+                        <td>6.5/10</td>
+                    </tr>
+                    <tr>
+                        <td>C/C++</td>
+                        <td><meter value=".6"></meter></td>
+                        <td>6/10</td>
+                    </tr>
+                    <tr>
+                        <td>PHP</td>
+                        <td><meter value=".5"></meter></td>
+                        <td>5/10</td>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td><meter value=".5"></meter></td>
+                        <td>5/10</td>
+                    </tr>
+                    <tr>
+                        <td>Windows</td>
+                        <td><meter value=".5"></meter></td>
+                        <td>5/10</td>
+                    </tr>
+                    <tr>
+                        <td>Linux</td>
+                        <td><meter value=".3"></meter></td>
+                        <td>3/10</td>
+                    </tr>
+                    <tr>
+                        <td>Django</td>
+                        <td><meter value=".3"></meter></td>
+                        <td>3/10</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <footer id="contact">
+                <h3>Contact</h3>
+                <p>Gary Lai</p>
+                <p><a href="mailto:garylai910@gmail.com" id="email" target="_blank">garylai910@gmail.com</a></p>
+                <a href="https://github.com/gwebwe" target="_blank">
+                    <img class="icon" src="icon/github.png" title="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/gary-lai-161446aa/" target="_blank">
+                    <img class="icon" src="icon/linkedin.png"  title="LinkedIn">
+                </a>
+            </footer>
+        </div>
     </div>
-    </body>
+    <!--Contact-->
+</div>
+</body>
 </html>
